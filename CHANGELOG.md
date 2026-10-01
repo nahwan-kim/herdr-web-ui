@@ -8,6 +8,13 @@ between releases do not reach them. Remote-PC runtime bundles are versioned sepa
 ## [Unreleased]
 
 ### Added
+- Voice input in the chat composer and the terminal input line. Hold or tap the mic and speak,
+  Korean and English mixed; the text lands in the box at the caret and is never sent by itself.
+  It uses your own OpenAI API key, kept on the server (Settings → Voice input), and falls back to
+  the browser's speech recognition without one. Off by default. Settings → Voice input shows
+  today's, this month's and all-time dictations, minutes and estimated cost from OpenAI's list
+  prices; the OpenAI bill stays the final word. Silence before, between and after the words is
+  left out of the recording, so it is neither uploaded nor billed.
 - While an OmO pane has background tasks running, the chat's status line says how many, and tapping
   it lists them: what each is doing, its category and model, how long it has run, its turns, tool
   calls and tokens, and below, the tasks that ended in the last day and whether they finished,

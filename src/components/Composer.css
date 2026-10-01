@@ -23,6 +23,11 @@
   margin-inline: auto;
 }
 
+/* the dictation pill floats above the composer, on the same column edge */
+.composer > .voice-pill[data-align="start"] {
+  left: calc(var(--space-4) + max(0px, (100% - 2 * var(--space-4) - var(--content-w)) / 2));
+}
+
 .composer-status {
   display: flex;
   flex-wrap: wrap;
